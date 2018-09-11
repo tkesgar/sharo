@@ -1,0 +1,43 @@
+{
+  "name": "sharo",
+  "version": "0.0.0",
+  "description": "A Next.js + Express boilerplate",
+  "author": "Ted Kesgar <t.kesgar@live.com> (https://tkesgar.com)",
+  "license": "MIT",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkesgar/sharo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tkesgar/sharo/issues"
+  },
+  "homepage": "https://github.com/tkesgar/sharo#readme",
+  "scripts": {
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "sharo-scripts": "^0.1.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-jest": "^21.22.0",
+    "husky": "^0.14.3",
+    "jest": "^23.6.0",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2,
+    "overrides": [
+      {
+        "files": "**/*.test.js",
+        "env": "jest",
+        "plugins": [
+          "jest"
+        ]
+      }
+    ]
+  }
+}
