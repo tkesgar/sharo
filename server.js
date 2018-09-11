@@ -1,8 +1,10 @@
+require('sharo-scripts/util/load-dotenv')() // Loads .env.
+
 const sharo = require('sharo-scripts')
 
 sharo()
   .then(app => {
-    const port = process.env.PORT || 3000
+    const port = parseInt(process.env.PORT, 10) || 3000
     app.listen(port, () => {
       app.log.info(`Server listening at port ${port}`)
     })
