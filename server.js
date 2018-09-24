@@ -10,5 +10,6 @@ sharo()
     })
   })
   .catch(error => {
-    throw error
+    console.error(error)
+    process.exitCode = 1
   })
