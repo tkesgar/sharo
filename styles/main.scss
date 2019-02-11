@@ -1,9 +1,18 @@
-// Import variables first to define Bootstrap/Bootswatch variables first.
-// See: https://getbootstrap.com/docs/4.0/getting-started/theming/
-@import 'variables';
+/**
+ * This is the "main" SCSS file imported by pages/_app.js.
+*/
 
-// Import Bootstrap and Bootswatch.
-// Modify (or remove) Bootswatch theme if neccessary.
-@import "~bootswatch/dist/lux/variables";
+// Import Bootstrap variables.
+//
+// This import must be done BEFORE Bootstrap is imported, so that any variables
+// declared by Bootstrap gets overridden.
+@import "bootstrap-variables";
+
+// Import Bootstrap.
 @import "~bootstrap/scss/bootstrap";
+
+// Import Bootswatch.
+//
+// This import must be done AFTER Bootstrap is imported, so that any styles
+// declared by Boostrap gets overridden.
 @import "~bootswatch/dist/lux/bootswatch";
