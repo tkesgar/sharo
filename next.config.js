@@ -1,10 +1,3 @@
-const withSharo = require('sharo-scripts/next')
+const withSharo = require('@tkesgar/sharo-next')
 
-module.exports = withSharo({
-  webpack(config) {
-    // Add MDX and SCSS file extensions for Webpack auto-resolve.
-    config.resolve.extensions.push('.md', '.mdx', '.sass', '.scss')
-
-    return config
-  }
-})
+module.exports = withSharo()

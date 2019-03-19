@@ -11,8 +11,3 @@
 // Import Bootstrap.
 @import "~bootstrap/scss/bootstrap";
 
-// Import Bootswatch.
-//
-// This import must be done AFTER Bootstrap is imported, so that any styles
-// declared by Boostrap gets overridden.
-@import "~bootswatch/dist/lux/bootswatch";

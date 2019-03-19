@@ -1,10 +1,8 @@
-/* eslint-env browser */
 import React from 'react'
 import Head from 'next/head'
 import NextApp, {Container as NextContainer} from 'next/app'
 
-// eslint-disable-next-line import/no-unassigned-import
-import '../styles/main'
+import '../styles/main' // eslint-disable-line import/no-unassigned-import
 
 export default class App extends NextApp {
   render() {
