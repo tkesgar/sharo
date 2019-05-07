@@ -14,21 +14,21 @@
   },
   "dependencies": {
     "@tkesgar/sharo-babel": "^0.1.0",
-    "@tkesgar/sharo-next": "^0.2.0",
+    "@tkesgar/sharo-next": "^0.3.0",
     "bootstrap": "^4.3.1",
-    "next": "^8.0.3",
-    "node-sass": "^4.11.0",
+    "next": "^8.1.0",
+    "node-sass": "^4.12.0",
     "postcss-preset-env": "^6.6.0",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "reactstrap": "^7.1.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "reactstrap": "^8.0.0",
     "worker-loader": "^2.0.0"
   },
   "devDependencies": {
-    "eslint-config-sharo-scripts": "^0.2.0",
-    "stylelint": "^9.10.1",
-    "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-scss": "^3.5.4",
+    "eslint-config-sharo-scripts": "^0.2.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-scss": "^3.6.1",
     "xo": "^0.24.0"
   },
   "xo": {
