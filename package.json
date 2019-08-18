@@ -9,26 +9,25 @@
     "test": "npm run lint",
     "lint": "npm run lint:js && npm run lint:scss",
     "lint:js": "xo",
-    "lint:scss": "stylelint styles/**",
-    "analyze": "BUNDLE_ANALYZE=both npm run build"
+    "lint:scss": "stylelint styles/**"
   },
   "dependencies": {
-    "@tkesgar/sharo-babel": "^0.1.0",
-    "@tkesgar/sharo-next": "^0.3.0",
+    "@tkesgar/sharo-babel": "^0.1.1",
+    "@tkesgar/sharo-next": "^0.3.1",
     "bootstrap": "^4.3.1",
-    "next": "^8.1.0",
+    "next": "^9.0.3",
     "node-sass": "^4.12.0",
-    "postcss-preset-env": "^6.6.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "reactstrap": "^8.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "reactstrap": "^8.0.1",
     "worker-loader": "^2.0.0"
   },
   "devDependencies": {
-    "eslint-config-sharo-scripts": "^0.2.1",
+    "eslint-config-sharo-scripts": "^0.3.0",
     "stylelint": "^10.1.0",
     "stylelint-config-recommended-scss": "^3.3.0",
-    "stylelint-scss": "^3.8.0",
+    "stylelint-scss": "^3.9.3",
     "xo": "^0.24.0"
   },
   "xo": {
