@@ -6,40 +6,68 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "test": "npm run lint",
-    "lint": "npm run lint:js && npm run lint:scss",
-    "lint:js": "xo",
+    "lint": "npm run lint:scripts && npm run lint:scss",
+    "lint:js": "eslint . --ext js,ts,tsx",
     "lint:scss": "stylelint styles/**"
   },
   "dependencies": {
     "@tkesgar/sharo-babel": "^0.1.1",
-    "@tkesgar/sharo-next": "^0.3.1",
-    "bootstrap": "^4.3.1",
-    "next": "^9.0.3",
-    "node-sass": "^4.12.0",
+    "@tkesgar/sharo-next": "^0.4.0",
+    "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
+    "next": "^9.3.1",
     "postcss-preset-env": "^6.7.0",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "reactstrap": "^8.0.1",
-    "worker-loader": "^2.0.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "reactstrap": "^8.4.1",
+    "sass": "^1.26.3",
+    "typescript": "^3.8.3"
   },
   "devDependencies": {
-    "eslint-config-sharo-scripts": "^0.3.0",
-    "stylelint": "^10.1.0",
-    "stylelint-config-recommended-scss": "^3.3.0",
-    "stylelint-scss": "^3.9.3",
-    "xo": "^0.24.0"
+    "@types/node": "^13.9.3",
+    "@types/react": "^16.9.17",
+    "eslint": "^6.8.0",
+    "eslint-config-sharo-scripts": "^0.4.0-beta.1",
+    "prettier": "~2.0.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.16.0"
   },
-  "xo": {
-    "extends": [
-      "sharo-scripts"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
     ],
-    "space": 2,
-    "semicolon": false
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "sharo-scripts"
   },
   "stylelint": {
     "extends": [
-      "stylelint-config-recommended-scss"
+      "stylelint-config-recommended",
+      "stylelint-config-recommended-scss",
+      "stylelint-config-prettier"
+    ]
+  },
+  "prettier": {
+    "overrides": [
+      {
+        "files": "*.md",
+        "options": {
+          "proseWrap": "always"
+        }
+      }
     ]
   }
 }

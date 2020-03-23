@@ -1,11 +1,14 @@
 {
   // Enable xo and disable built-in JavaScript lint and formatting.
-  "xo.enable": true,
-  "xo.format.enable": true,
+  "eslint.enable": true,
+  "eslint.format.enable": true,
   "javascript.validate.enable": false,
   "javascript.format.enable": false,
   // Enable stylelint and disable built-in CSS/SCSS/SASS lint.
   "stylelint.enable": true,
   "css.validate": false,
-  "scss.validate": false
+  "scss.validate": false,
+  // Enable automatic formatting.
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
 }
