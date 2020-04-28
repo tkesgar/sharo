@@ -1,8 +1,8 @@
 const withSharo = require("@tkesgar/sharo-next");
-const { loadEnv, getAppEnvs } = require("./lib/env");
+const { loadEnv, getPrefixEnvs } = require("@tkesgar/reno");
 
 loadEnv();
 
 module.exports = withSharo({
-  env: getAppEnvs(),
+  env: getPrefixEnvs("APP_"),
 });
