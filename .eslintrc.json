@@ -1,0 +1,11 @@
+{
+  "extends": "sharo-scripts",
+  "overrides": [
+    {
+      "files": "**/*.js",
+      "env": {
+        "node": true
+      }
+    }
+  ]
+}
