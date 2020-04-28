@@ -6,9 +6,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "npm run lint:scripts && npm run lint:scss",
-    "lint:js": "eslint . --ext js,ts,tsx",
-    "lint:scss": "stylelint styles/**"
+    "export": "next build && next export",
+    "lint:scripts": "eslint .",
+    "lint:styles": "stylelint **/*",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@tkesgar/sharo-babel": "^1.0.0",
@@ -51,7 +52,15 @@
     ]
   },
   "eslintConfig": {
-    "extends": "sharo-scripts"
+    "extends": "sharo-scripts",
+    "overrides": [
+      {
+        "files": "**/*.js",
+        "env": {
+          "node": true
+        }
+      }
+    ]
   },
   "stylelint": {
     "extends": [
