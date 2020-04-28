@@ -2,17 +2,19 @@
 
 ## Features
 
-*TBD*
+_TBD_
 
 ## Usage
 
-*TBD*
+_TBD_
 
 ## Contributing
 
 Feel free to submit issues and pull requests!
 
-Please note that `sharo-scripts` has [its own repository][sharo-scripts], and any issues exclusively related to `sharo-scripts` (code maintenance, bugfixes, etc.) should be filed there instead.
+Please note that `sharo-scripts` has [its own repository][sharo-scripts], and
+any issues exclusively related to `sharo-scripts` (code maintenance, bugfixes,
+etc.) should be filed there instead.
 
 ## License
 
