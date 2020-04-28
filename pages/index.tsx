@@ -1,16 +1,22 @@
 import * as React from "react";
-import { Navbar, NavbarBrand, Container } from "reactstrap";
 
 export default function IndexPage(): JSX.Element {
   return (
-    <>
-      <Navbar dark color="dark">
-        <NavbarBrand href="#">sharo</NavbarBrand>
-      </Navbar>
-      <Container className="my-2 text-center">
-        <h1>Hello world!</h1>
-        <p>It works!</p>
-      </Container>
-    </>
+    <div
+      style={{
+        maxWidth: "40rem",
+        margin: "2rem auto 0",
+        padding: "2rem",
+        background: "#fff",
+      }}
+    >
+      <h1>It works!</h1>
+      <p>
+        Application environment: <code>{process.env.APP_ENV}</code>
+      </p>
+      <p>
+        Node environment: <code>{process.env.NODE_ENV}</code>
+      </p>
+    </div>
   );
 }

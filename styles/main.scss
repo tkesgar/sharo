@@ -1,12 +1,5 @@
-/**
- * This is the "main" SCSS file imported by pages/_app.js.
-*/
+@import "./normalize.css";
 
-// Import Bootstrap variables.
-//
-// This import must be done BEFORE Bootstrap is imported, so that any variables
-// declared by Bootstrap gets overridden.
-@import "bootstrap-variables";
-
-// Import Bootstrap.
-@import "~bootstrap/scss/bootstrap";
+body {
+  background: #eee;
+}
