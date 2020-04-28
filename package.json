@@ -29,6 +29,8 @@
     "@types/react": "^16.9.34",
     "eslint": "^6.8.0",
     "eslint-config-sharo-scripts": "^0.4.1",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
     "prettier": "~2.0.5",
     "stylelint": "^13.3.3",
     "stylelint-config-prettier": "^8.0.1",
@@ -43,12 +45,14 @@
   "lint-staged": {
     "*.{js,ts}": [
       "eslint --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
+    ],
+    "*{css,scss,sass}": [
+      "stylelint --fix",
+      "prettier --write"
     ],
     "*.{json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   },
   "eslintConfig": {
