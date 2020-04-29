@@ -1,5 +1,21 @@
-@import "./normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Courier+Prime&display=swap");
+@import "./normalize";
+
+html {
+  font-size: 16px;
+}
 
 body {
+  color: #333;
+  font-family: "Manrope", sans-serif;
+}
+
+code,
+kbd,
+samp {
+  font-family: "Courier Prime", monospace;
+}
+
+code {
   background: #eee;
 }

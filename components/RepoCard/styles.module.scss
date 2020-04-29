@@ -1,0 +1,34 @@
+.RepoCard {
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+
+  :first-child {
+    margin-top: 0;
+  }
+
+  :last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  dl {
+    margin: 1rem 0;
+
+    dt {
+      font-weight: bold;
+    }
+
+    dd {
+      margin: 0 0 0.5rem 1rem;
+    }
+  }
+}
