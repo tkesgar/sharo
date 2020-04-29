@@ -67,6 +67,9 @@ typings/
 # Project ignores
 # ------------------------------------------------------------------------------
 
+# next.js export output
+out
+
 # Cypress test result screenshots and videos
 cypress/screenshots/
 cypress/videos/
