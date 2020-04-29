@@ -65,7 +65,8 @@ typings/
 .next
 
 # Project ignores
-# ---------------
+# ------------------------------------------------------------------------------
 
-# Bundles directory
-bundles
+# Cypress test result screenshots and videos
+cypress/screenshots/
+cypress/videos/

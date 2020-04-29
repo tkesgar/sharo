@@ -9,7 +9,8 @@
     "export": "next build && next export",
     "lint:scripts": "eslint .",
     "lint:styles": "stylelint **/*",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "cypress": "cypress"
   },
   "dependencies": {
     "@tkesgar/reno": "^0.2.1",
@@ -25,6 +26,7 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "cypress": "^4.5.0",
     "eslint": "^6.8.0",
     "eslint-config-sharo-scripts": "^0.4.1",
     "husky": "^4.2.5",
