@@ -78,7 +78,7 @@ export default function RepoCard({
   return (
     <div className={styles.RepoCard} {...restProps}>
       <h2 data-cy="repo-title">{name}</h2>
-      <p data-cy="repo-description">{description}</p>
+      <p>{description}</p>
       <dl>
         <dt>Issues</dt>
         <dd>{issues}</dd>
