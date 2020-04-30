@@ -50,18 +50,22 @@ export default function RepoCard({
     };
   }, []);
 
-  if (!apiRepoData) {
+  if (error) {
     return (
       <div className={styles.RepoCard} {...restProps}>
-        <div style={{ textAlign: "center" }}>Loading...</div>
+        <div style={{ textAlign: "center" }} data-testid="error">
+          {error}
+        </div>
       </div>
     );
   }
 
-  if (error) {
+  if (!apiRepoData) {
     return (
       <div className={styles.RepoCard} {...restProps}>
-        <div style={{ textAlign: "center" }}>{error}</div>
+        <div style={{ textAlign: "center" }} data-testid="loading">
+          Loading...
+        </div>
       </div>
     );
   }
@@ -77,16 +81,18 @@ export default function RepoCard({
 
   return (
     <div className={styles.RepoCard} {...restProps}>
-      <h2 data-cy="repo-title">{name}</h2>
-      <p>{description}</p>
+      <h2 data-cy="repo-title" data-testid="title">
+        {name}
+      </h2>
+      <p data-testid="description">{description}</p>
       <dl>
         <dt>Issues</dt>
-        <dd>{issues}</dd>
+        <dd data-testid="issues">{issues}</dd>
         <dt>Stars</dt>
-        <dd>{stars}</dd>
+        <dd data-testid="stars">{stars}</dd>
         <dt>View on GitHub</dt>
         <dd>
-          <a href={url} data-cy="repo-url">
+          <a href={url} data-cy="repo-url" data-testid="url">
             {fullName}
           </a>
         </dd>

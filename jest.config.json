@@ -1,0 +1,11 @@
+{
+  "preset": "ts-jest",
+  "moduleNameMapper": {
+    "\\.(css|scss|sass)$": "<rootDir>/tests/stubs/css-module.ts"
+  },
+  "globals": {
+    "ts-jest": {
+      "tsConfig": "tsconfig.jest.json"
+    }
+  }
+}

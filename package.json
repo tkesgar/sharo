@@ -10,6 +10,7 @@
     "lint:scripts": "eslint .",
     "lint:styles": "stylelint **/*",
     "format": "prettier --write .",
+    "test": "jest",
     "cypress": "cypress"
   },
   "dependencies": {
@@ -26,13 +27,17 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@testing-library/react": "^10.0.3",
+    "@types/jest": "^25.2.1",
     "cypress": "^4.5.0",
     "eslint": "^6.8.0",
     "eslint-config-sharo-scripts": "^0.5.1",
     "husky": "^4.2.5",
+    "jest": "^25.5.2",
     "lint-staged": "^10.1.7",
     "prettier": "~2.0.5",
     "stylelint": "^13.3.3",
-    "stylelint-config-sharo": "^0.1.0"
+    "stylelint-config-sharo": "^0.1.0",
+    "ts-jest": "^25.4.0"
   }
 }
