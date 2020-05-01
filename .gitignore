@@ -73,3 +73,6 @@ out
 # Cypress test result screenshots and videos
 cypress/screenshots/
 cypress/videos/
+
+# local dotenv files
+*.local.env
