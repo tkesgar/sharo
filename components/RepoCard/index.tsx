@@ -48,7 +48,7 @@ export default function RepoCard({
     return (): void => {
       abortController.abort();
     };
-  }, []);
+  }, [owner, repo]);
 
   if (error) {
     return (
