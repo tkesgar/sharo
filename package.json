@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next build && next export",
-    "lint:scripts": "eslint .",
+    "lint:scripts": "eslint . --ext js,jsx,ts,tsx",
     "lint:styles": "stylelint **/*",
     "format": "prettier --write .",
     "test": "jest",
