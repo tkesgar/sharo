@@ -7,6 +7,9 @@ test framework.
 
 **What sharo is not:** a full-fledged, battery-included framework a la Rails.
 
+You are free to use this boilerplate directly, use the smaller utility packages,
+or use this boilerplate as reference.
+
 ## Rationale
 
 ### Reasons to use
