@@ -74,5 +74,5 @@ out
 cypress/screenshots/
 cypress/videos/
 
-# local dotenv files
-*.local.env
+# local environment files
+.env*.local
