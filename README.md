@@ -40,27 +40,6 @@ You need to install the following plugins:
 - `stylelint.vscode-stylelint`
 - `esbenp.prettier-vscode`
 
-### Environment files
-
-`.env` files are supported via `@tkesgar/reno`.
-
-You can put default environment variables in `default.env`, and put
-environment-specific variables in `.env` (e.g. deployment machine).
-
-If `NODE_ENV` is defined, `{NODE_ENV}.local.env` and `{NODE_ENV}.env` will be
-loaded as well, in order. This is useful if you need to put some specific
-variables for some environments.
-
-Next.js is configured only to include environment variables with `APP_` prefix.
-So, if you need to put reCAPTCHA site ID for example, you can put it as
-`APP_RECAPTCHA_ID` and use it in TSX files like this:
-
-```tsx
-function SomeComponent(): JSX.Element {
-  return <ReCAPTCHA siteId={process.env.APP_RECAPTCHA_ID}>;
-}
-```
-
 ### TypeScript
 
 TypeScript is included with the default `tsconfig.json` from Next.js.
@@ -131,6 +110,10 @@ included to lint the test files.
 ```
 
 ## Questions
+
+### Where can I put environment-specific variables?
+
+You can put environment variables in `.env*` and `.env*.local` (available since Next.js 9.4).
 
 ### Why is everything is JSON? Why don't you put it in a `config` folder to make it clean?
 
