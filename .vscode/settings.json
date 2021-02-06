@@ -1,18 +1,10 @@
 {
-  // Disable the built-in JavaScript and TypeScript formatting and validation
-  "javascript.validate.enable": false,
-  "javascript.format.enable": false,
-  "typescript.format.enable": false,
-  "typescript.validate.enable": false,
-  // Disable the built-in CSS and SCSS validation
-  "css.validate": false,
-  "scss.validate": false,
-  // Enable ESLint plugin (dbaeumer.vscode-eslint)
-  "eslint.enable": true,
   "eslint.format.enable": true,
-  // Enable stylelint plugin (stylelint.vscode-stylelint)
   "stylelint.enable": true,
-  // Enable automatic formatting on paste and save
   "editor.formatOnPaste": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  }
 }
