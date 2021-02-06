@@ -31,10 +31,10 @@ or use this boilerplate as reference.
 
 ### Visual Studio Code settings.json
 
-A `settings.json` file for VS Code is included to disable the built-in
-formatters and linters in favor of ESLint, stylelint, and prettier plugins.
+A `settings.json` file for VS Code is included to enable automatic fixing files
+on save and on paste.
 
-You need to install the following plugins:
+You may need to install the following plugins:
 
 - `dbaeumer.vscode-eslint`
 - `stylelint.vscode-stylelint`
@@ -61,9 +61,10 @@ Prettier is included with default configurations, except for enabling
 For JS and TS files, Prettier is integrated with ESLint via
 `eslint-plugin-prettier`.
 
-> `lint-staged` is configured to process only JSON and Markdown files. If there
-> are other extensions you want to add (e.g. YAML), put it into the
-> `.lintstagedrc.json`:
+> `lint-staged` is configured to process _all_ staged files into Prettier. If
+> you stage files unsupported by Prettier, the commit will fail. To fix it,
+> ignore the unsupported files by adding it into `.prettierignore`. See
+> [Questions](#questions) below for more information.
 
 ```json
 {
@@ -144,6 +145,24 @@ For `ts-jest`, we need TypeScript to compile JSX to React render calls
 You should keep them in sync to ensure that your components are tested in
 similar environment with actual browser environment. The only difference should
 only `jsx`; everything else should be same.
+
+### My commit is blocked by `lint-staged`; it appears to be some error with Prettier.
+
+`lint-staged` is configured such that _all_ committed files will be passed to
+Prettier:
+
+```json
+{
+  "*": ["prettier --write"]
+}
+```
+
+While Prettier supports various files from Markdown to YAML, it does not support
+some files like `.gitignore` and even `.prettierignore`. It is possible that
+your commit touches these unsupported files.
+
+To fix it, simply exclude the unsupported files by adding it into
+`.prettierignore`.
 
 ## Contributing
 
