@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/camelcase, @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as React from "react";
 import { render, screen, act } from "@testing-library/react";
 import RepoCard from ".";

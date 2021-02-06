@@ -113,7 +113,8 @@ included to lint the test files.
 
 ### Where can I put environment-specific variables?
 
-You can put environment variables in `.env*` and `.env*.local` (available since Next.js 9.4).
+You can put environment variables in `.env*` and `.env*.local` (available since
+Next.js 9.4).
 
 ### Why is everything is JSON? Why don't you put it in a `config` folder to make it clean?
 
