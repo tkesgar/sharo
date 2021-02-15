@@ -66,18 +66,13 @@ For JS and TS files, Prettier is integrated with ESLint via
 > ignore the unsupported files by adding it into `.prettierignore`. See
 > [Questions](#questions) below for more information.
 
-```json
-{
-  "*.{json,md,yaml,yml}": ["prettier --write"]
-}
-```
-
 ### Babel
 
 sharo uses a custom Babel preset `@tkesgar/sharo-babel`.
 
 All it does is to add a plugin `styled-jsx-plugin-postcss` into the Babel
-pipeline.
+pipeline, so that styles from `<style jsx>` tag will be processed with the same
+PostCSS as other stylesheets.
 
 ### PostCSS
 
