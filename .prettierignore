@@ -1,2 +1,5 @@
 .next/
 coverage/
+.eslintignore
+.stylelintignore
+.prettierignore
