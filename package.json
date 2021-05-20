@@ -11,8 +11,7 @@
     "lint:styles": "stylelint '**/*.{css,scss,sass}'",
     "format": "prettier --write .",
     "test": "jest",
-    "cypress": "cypress",
-    "postinstall": "husky install"
+    "cypress": "cypress"
   },
   "dependencies": {
     "@tkesgar/sharo-babel": "^3.0.0-beta.2",

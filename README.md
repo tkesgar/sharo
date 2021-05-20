@@ -105,6 +105,32 @@ included to lint the test files.
 /// <reference types="cypress" />
 ```
 
+### Husky
+
+This repository uses [Husky](https://typicode.github.io/husky/#/) to run git
+hooks. However, it is **not installed by default** because some projects might
+configure their environment differently.
+
+Run this after `npm install` to install the git hooks:
+
+```sh
+npx husky install
+```
+
+To make, add `prepare` script to `package.json`:
+
+```js
+// package.json
+{
+  "scripts": {
+    "prepare": "husky install"
+  }
+}
+```
+
+See [Husky#Usage](https://typicode.github.io/husky/#/?id=usage) for more
+detailed documentation.
+
 ## Questions
 
 ### Where can I put environment-specific variables?
