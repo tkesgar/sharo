@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@testing-library/react": "^11.2.7",
-    "cypress": "^6.9.1",
+    "cypress": "^7.3.0",
     "eslint": "^7.26.0",
     "eslint-config-sharo-scripts": "^3.0.0-beta.2",
     "husky": "^6.0.0",
