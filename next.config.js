@@ -1,5 +1,5 @@
 const sharoNext = require("@tkesgar/sharo-next");
 
-const withSharo = sharoNext({});
+const withSharo = sharoNext();
 
 module.exports = withSharo();
