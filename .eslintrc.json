@@ -1,3 +1,7 @@
 {
-  "extends": "sharo-scripts"
+  "extends": "sharo-scripts",
+  "env": {
+    "browser": true,
+    "node": true
+  }
 }

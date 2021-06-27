@@ -1,6 +1,5 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+import { act, render, screen } from "@testing-library/react";
 import * as React from "react";
-import { render, screen, act } from "@testing-library/react";
 import RepoCard from ".";
 
 it("should show info from API data", async () => {

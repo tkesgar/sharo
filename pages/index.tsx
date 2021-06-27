@@ -1,7 +1,7 @@
 import * as React from "react";
 import RepoCard from "../components/RepoCard";
 
-export default function IndexPage(): JSX.Element {
+export default function IndexPage(): React.ReactElement {
   return (
     <div
       style={{

@@ -19,7 +19,7 @@ export default function RepoCard({
   owner,
   repo,
   ...restProps
-}: RepoCardProps): JSX.Element {
+}: RepoCardProps): React.ReactElement {
   const [apiRepoData, setApiRepoData] = React.useState<ApiRepoData>(null);
   const [error, setError] = React.useState<string>(null);
   React.useEffect(() => {

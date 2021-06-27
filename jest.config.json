@@ -1,5 +1,6 @@
 {
   "preset": "ts-jest",
+  "testEnvironment": "jsdom",
   "moduleNameMapper": {
     "\\.(css|scss|sass)$": "<rootDir>/tests/stubs/css-module.ts"
   },
